@@ -16,8 +16,8 @@ You will also see any lint errors in the console.
 
 Statistical Measures of Flavonoid
 
-![Alt Text](wine-statistics-app/assets/screenshots/Flavonoid.PNG)
+![Flavonoid Screenshot](wine-statistics-app/assets/screenshots/Flavonoid.PNG)
 
 Statistical Measures of Gamma
 
-![Alt Text](wine-statistics-app/assets/screenshots/Gamma.PNG)
+![Gama Screenshot](wine-statistics-app/assets/screenshots/Gamma.PNG)
