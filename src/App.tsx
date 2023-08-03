@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import wineData from "./data/wineData.json";
+import "./App.css";
+import StatisticalMeasuresComponent from "./components/StatisticalMeasuresComponent";
+import { calculateGamma } from "./utils/statistics";
 
-function App() {
+const App: React.FC = () => {
+  const gammaData = calculateGamma(wineData);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Statistical Measures of Flavonoid</h1>
+      <StatisticalMeasuresComponent data={wineData} propertyName="Flavanoids" />
+      <h1>Statistical Measures of Gamma</h1>
+      <StatisticalMeasuresComponent data={gammaData} propertyName="Gamma" />
     </div>
   );
-}
+};
 
 export default App;
